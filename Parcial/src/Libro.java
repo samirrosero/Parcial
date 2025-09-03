@@ -48,9 +48,39 @@ public class Libro {
         this.numeroEjemplaresPrestados = numeroEjemplaresPrestados;
     }
 
-    public void prestamo(){
-        
+    public boolean Prestamo(){
+        if ( numeroEjemplares < numeroEjemplaresPrestados  ) {
+            this.numeroEjemplaresPrestados++;
+            System.out.println("OPERACION EXITOSA!!");
+            return true;
+        } else {
+            System.out.println("OPERACION NO EXITOSA!");
+            return false;
+        }
+
     }
+    
+    public boolean Devolucion (){
+        if (numeroEjemplaresPrestados< numeroEjemplares){
+            this.numeroEjemplares++;
+            System.out.println("Puedes volver a pedir prestado un libro");
+            return true;
+        } else {
+            System.out.println("Prestamos LIMITADOS!!");
+            return false;
+        }
+    }
+
+    @Override
+    public String toString (){
+        return "Titulo: "+ titulo + "\n"+
+        "Autor: "+ autor+ "\n"+
+        "Numero de Ejemplares: "+ numeroEjemplares + "\n"+
+        "Numero de Ejemplares Prestados: " + numeroEjemplaresPrestados;
+    }
+
+    
+
 
     
 }
