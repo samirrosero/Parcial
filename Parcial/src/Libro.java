@@ -77,8 +77,6 @@ public class Libro {
         "Autor: "+ autor+ "\n"+
         "Numero de Ejemplares: "+ numeroEjemplares + "\n"+
         "Numero de Ejemplares Prestados: " + numeroEjemplaresPrestados;
-
-
     }
 
     
