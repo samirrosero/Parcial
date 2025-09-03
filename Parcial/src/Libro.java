@@ -48,7 +48,9 @@ public class Libro {
         this.numeroEjemplaresPrestados = numeroEjemplaresPrestados;
     }
 
-    
+    public void prestamo(){
+        
+    }
 
     
 }
