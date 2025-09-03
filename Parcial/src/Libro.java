@@ -3,6 +3,8 @@ public class Libro {
     public String autor;
     public int numeroEjemplares;
     public int numeroEjemplaresPrestados;
+    
+    
 
     // Constructor
 
