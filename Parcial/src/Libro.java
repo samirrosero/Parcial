@@ -3,7 +3,11 @@ public class Libro {
     public String autor;
     public int numeroEjemplares;
     public int numeroEjemplaresPrestados;
+<<<<<<< HEAD
+    
+=======
     public int añoPublicacion;
+>>>>>>> 07094ee8dac46f234fe5b9c1d9df16de222b6dd5
     
 
     // Constructor
