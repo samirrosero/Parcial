@@ -2,7 +2,7 @@
 Samir Horacio Rosero Armero
 Valeri Sofia Solis Borja
 
-
+...
 ## PARCIAL
 =======
 ## PARCIAL
