@@ -13,8 +13,8 @@ public class App extends Libro {
         System.out.println("ingrese el numero de ejemplares: ");
         libro2.setNumeroEjemplares(sc.nextInt());
 
-<<<<<<< HEAD
-=======
+
+
         // probar metodosç
 
         System.out.println("\n intentando prestar un libro de libro1 ..");
@@ -36,7 +36,7 @@ public class App extends Libro {
       
       System.out.println("\nDatos de libro1: "+ libro1 );
       System.out.println("\nDatos de libro2: "+ libro2 );
->>>>>>> 910ebaeeeea2131aa80a9ceb28abcfa2ebaefd95
+
 
 
 
