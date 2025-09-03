@@ -3,7 +3,11 @@ public class Libro {
     public String autor;
     public int numeroEjemplares;
     public int numeroEjemplaresPrestados;
+<<<<<<< HEAD
     
+=======
+    public int añoPublicacion;
+>>>>>>> 07094ee8dac46f234fe5b9c1d9df16de222b6dd5
     
 
     // Constructor
@@ -11,11 +15,13 @@ public class Libro {
     public Libro() {
     }
 
-    public Libro(String titulo, String autor, int numeroEjemplares, int numeroEjemplaresPrestados) {
+    public Libro(String titulo, String autor, int numeroEjemplares, int numeroEjemplaresPrestados, int añoPublicacion) {
         this.titulo = titulo;
         this.autor = autor;
         this.numeroEjemplares = numeroEjemplares;
         this.numeroEjemplaresPrestados = numeroEjemplaresPrestados;
+        this.añoPublicacion = añoPublicacion;
+
     }
 
     public String getTitulo() {
@@ -49,6 +55,13 @@ public class Libro {
     public void setNumeroEjemplaresPrestados(int numeroEjemplaresPrestados) {
         this.numeroEjemplaresPrestados = numeroEjemplaresPrestados;
     }
+    public int getAñoPublicacion(){
+        return añoPublicacion;
+    }
+   public void setAñoPublicacuon(int añoPublicacion){
+        this.añoPublicacion= añoPublicacion;
+    }
+
 
     public boolean Prestamo(){
         if ( numeroEjemplares < numeroEjemplaresPrestados  ) {
@@ -73,13 +86,20 @@ public class Libro {
         }
     }
 
+    public boolean esAntiguo() {
+    return añoPublicacion < 2000; // devuelve true si el libro es publicado antes del 2000
+}
+
     @Override
     public String toString (){
         return "Titulo: "+ titulo + "\n"+
         "Autor: "+ autor+ "\n"+
         "Numero de Ejemplares: "+ numeroEjemplares + "\n"+
-        "Numero de Ejemplares Prestados: " + numeroEjemplaresPrestados;
+        "Numero de Ejemplares Prestados: " + numeroEjemplaresPrestados + 
+        "Año de publicacion" + añoPublicacion;
+        
     }
+
 
     
 
